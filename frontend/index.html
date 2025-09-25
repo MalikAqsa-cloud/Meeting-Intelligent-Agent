@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Intelligence Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-900 mb-2">
+                Meeting Intelligence Agent
+            </h1>
+            <p class="text-lg text-gray-600">
+                Upload your meeting audio to get AI-powered transcription, summary, and action items
+            </p>
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="max-w-2xl mx-auto mb-8">
+            <div class="border-2 border-dashed border-gray-400 rounded-lg p-8 text-center hover:border-blue-500 hover:bg-blue-50 cursor-pointer transition-colors">
+                <div class="space-y-4">
+                    <div class="mx-auto w-16 h-16 text-gray-400">
+                        <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">
+                            Upload Meeting Audio
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Drag and drop your audio file here, or click to browse
+                        </p>
+                        <p class="text-sm text-gray-500">
+                            Supported formats: MP3, WAV, M4A, FLAC
+                        </p>
+                    </div>
+
+                    <button type="button" class="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                        Choose File
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Content -->
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Transcript -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Meeting Transcript
+                </h2>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <p class="text-gray-800 leading-relaxed">
+                        This is a demo transcript. In the full application, this would show the actual transcribed text from your uploaded audio file.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Meeting Summary
+                </h2>
+                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-400">
+                    <p class="text-gray-800 leading-relaxed">
+                        This is a demo summary. In the full application, this would show an AI-generated summary of your meeting content.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Action Items -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-gray-900 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                        Action Items
+                    </h2>
+                    
+                    <button class="px-4 py-2 bg-orange-600 text-white rounded-lg font-medium hover:bg-orange-700 transition-colors flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Send to Trello
+                    </button>
+                </div>
+                
+                <div class="space-y-3">
+                    <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                    1
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800">Follow up with the client about project requirements</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                    2
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800">Schedule team meeting for next week</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                                    3
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800">Review budget allocation for Q4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 text-sm text-gray-500">
+                    3 action items found
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Message -->
+        <div class="max-w-2xl mx-auto mt-8">
+            <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded-lg">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="font-medium">Demo Mode:</span>
+                    <span class="ml-2">This is a static demo. To use the full application, you need to set up the backend server with API keys.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
