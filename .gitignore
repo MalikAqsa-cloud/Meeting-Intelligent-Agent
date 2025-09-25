@@ -64,3 +64,9 @@ logs/
 # Temporary files
 *.tmp
 *.temp
+
+# Additional environment files
+.env.*
+!.env.example
+*.env
+!*.env.example
