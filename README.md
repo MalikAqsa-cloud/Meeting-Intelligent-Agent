@@ -266,10 +266,6 @@ logging.basicConfig(level=logging.DEBUG)
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 - AssemblyAI for speech-to-text capabilities
@@ -278,6 +274,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - React and FastAPI communities for excellent documentation
 
 ---
-
-**Built with ❤️ using modern AI and web technologies**
 # Meeting-Intelligent-Agent
